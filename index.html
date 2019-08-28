@@ -5,15 +5,233 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Shantell Davis</title>
+    <title>Basic Portfolio</title>
+    <!-- css style sheets -->
+    <link rel="stylesheet" type="text/css" href="assets/css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/portfolio.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/contact.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC:400,400i,900i&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-<!-- main container -->
-    <div class="container">
-        <aside id="colorlib-aside" role="complementary" class="border js-fullheight" style="height: 341px;">
-        </aside>
+    <div class="container-fluid">
+        <!-- sidenavbar -->
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar fixed-top" style="height: 100%">
+            <div class="sidebar-sticky">
+                <img src="./assets/images/headshot.jpg" alt="..." class="rounded-circle" id="headshot">
+                <div class="navbar-brand">
+                    <p id="name">Shantell Davis</p>
+                    <p id="title" style="font-size: 11px">Full-Stack Web Developer</p>
+                    <p id="title2" style="font-size: 10px">San Francisco, Ca</p>
+                </div>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">
+                            Home <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Carousel -->
+        <section class="bd-example offset-md-2" id="home">
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <img src="https://cdn.pixabay.com/photo/2016/11/23/15/20/fruit-1853466_1280.jpg"
+                            class="d-block w-100" alt="First Slide" />
+                        <div class="carousel-caption">
+                            <h1 id="name2">Hi!</h1>
+                            <h1 id="name2">I'm Shantell!</h1>
+                            <button id="cv" type="button" class="btn btn-outline-dark">Download CV <i
+                                    class="fas fa-file-download"></i></button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-caption">
+                            <h1 id="name2">I am a</h1>
+                            <h1 id="name2">Full-Stack Web Developer</h1>
+                            <a id="go" class="btn btn-outline-dark btn-xl js-scroll-trigger" href="#portfolio"
+                                target="_blank">View Portfolio <i class="fas fa-folder-open"></i></a>
+                        </div>
+                        <img src="https://cdn.pixabay.com/photo/2016/08/20/04/43/pineapple-1606852_1280.jpg"
+                            class="d-block w-100" alt="Second Slide" href="#" />
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+        <!-- about -->
+
+        <section class="offset-md-2" id="about">
+            <div class="page-header">
+                <h4 class="text-muted"><u>About Me</u></h4>
+                <h2>Who am I?</h2>
+            </div>
+            <br>
+            <div class="col-lg-12" id="aboutText">
+                <p>I’m Shantell and I'm passionate about providing quality Front End and Back End Web Development
+                    service in the Bay Area.</p>
+                <p>I have experience with web development tech including JavaScript, CSS, HTML, and Node.js.
+                    I’ve been doing Front End Web Development work for a short while, and I love it because it
+                    gives
+                    me the chance to explore my creative skills in the technical field I love so much. I always
+                    go
+                    above and beyond to ensure I am owning the skills I know and continuously learning new
+                    skills.
+                </p>
+                <p>My experience in Project Management has given me a strong commitment to data-driven decision
+                    making, including impacts on stakeholders. I hold communication in high regard; work well
+                    when
+                    collaborating with others or independently.</p>
+                <p>I look forward to working with you to help meet all your Front End Web Development needs and
+                    collaborating with others to create meaningful web applications.</p>
+                <br>
+                <a class="btn btn-dark btn-xl js-scroll-trigger" href="#portfolio">Checkout My Work</a>
+                <br>
+                <br>
+            </div>
+        </section>
+
+        <section class="offset-md-2" id="portfolio">
+            <h4 class="text-muted"><u>Portfolio</u></h4>
+            <div class="row offset-md-1" id="row1">
+                <div class="col-lg-5 col-md-4 col-sm-6 col-xs-12" id="portCard">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="./assets/images/shell1.jpg" alt="">
+                        <div class="overlay">
+                            <h2>Drink For Your Mood</h2>
+                            <p id="desc">A Front End Javascript Web App using Face+ and Drinks APIs to take your pic to
+                                discover
+                                you mood and reccomend a drink with a great photo and recipe. Styled with Bootstrap
+                                HTML/CSS </p>
+                            <a class="info" href="https://shantell87.github.io/Drink-For-Your-Mood/">Play</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-4 col-sm-6 col-xs-12" id="portCard">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="./assets/images/shell3.jpg" alt="">
+                        <div class="overlay">
+                            <h2>Trivia Game</h2>
+                            <p id="desc">A Front-End Web app using JS/JQuery and Bootstrap CSS. Click the link to test
+                                your
+                                knowledge of Greek Mythology in this fun trivia game.</p>
+                            <a class="info" href="https://shantell87.github.io/TriviaGame/">Play</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="row2">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" id="portCard">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="./assets/images/shell2.jpg" alt="">
+                        <div class="overlay">
+                            <h2>Crystal Collector</h2>
+                            <p id="desc"></p>
+                            <a class="info" href="https://shantell87.github.io/Crystal_Collector/">Play</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" id="portCard">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="./assets/images/shell4.jpg" alt="">
+                        <div class="overlay">
+                            <h2>Liri Bot!</h2>
+                            <p id="desc">A Node Express app that helps your search your favorites in movies, concerts,
+                                and music. Click yo view the live demo.</p>
+                            <a class="info"
+                                href="https://drive.google.com/open?id=1yeR-fKoRgWk1WhftYVPBbQNNiPE4E2Vr">View</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" id="portCard">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="./assets/images/shell5.jpg" alt="">
+                        <div class="overlay">
+                            <h2>Coming Soon...</h2>
+                            <p id="desc"></p>
+                            <a class="info" href="#">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="offset-md-2" id="contact">
+            <div class="page-header">
+                <h4 class="text-muted"><u>Get in Touch</u></h4>
+                <h2>Contact</h2>
+            </div>
+            <br>
+            <div class="row" id="conRow">
+                <div class="col-lg-2">
+                    <a class="btn btn-outline-dark btn-xl js-scroll-trigger"
+                        href="https://www.linkedin.com/in/shantell-davis/" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <p>LinkedIn</p>
+                    <br>
+                    <a class="btn btn-outline-dark btn-xl js-scroll-trigger" href="https://github.com/shantell87"
+                        target="_blank"><i class="fab fa-github"></i></a>
+                    <p>Github</p>
+                    <br>
+                    <a class="btn btn-outline-dark btn-xl js-scroll-trigger" href="https://devpost.com/shantell87"
+                        target="_blank"><i class="fab fa-dev"></i></a>
+                    <p>Devpost</p>
+                </div>
+
+                <div class="col-lg-10">
+                    <form id="form">
+                        <label for="name">Name</label> <br>
+                        <input type="text" id="name" name="name" placeholder="Shantell Davis">
+                        <br>
+
+                        <label for="Email">Email</label> <br>
+                        <input type="text" id="email" name="email" placeholder="shantell87@gmail.com"> <br>
+
+                        <label for="Message">Message</label> <br>
+                        <textarea id="message" name="Message" placeholder="Your Thoughts..."></textarea>
+                        <br>
+                        <input type="submit" value="Submit">
+
+
+                    </form>
+                </div>
+            </div>
+        </section>
     </div>
+
+    <script src="https://kit.fontawesome.com/286f9757e2.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
