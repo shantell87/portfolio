@@ -1,0 +1,110 @@
+body, html {
+    background-color: whitesmoke;
+    height: 100%;
+    margin:0;
+    max-width: 100%;
+}
+#home {
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Playfair Display SC', serif;
+    width: auto;
+}
+#about {
+    background-color: black;
+    background-image: url(https://cdn.pixabay.com/photo/2017/03/14/08/10/wood-2142241_1280.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: auto;
+    padding: 45px;
+    font-family: 'Playfair Display SC', serif;
+}
+#aboutText{
+    background-color: rgb(255,228,196,.5);
+}
+.text-muted{
+    padding: 30px;
+}
+
+/* carousel */
+.carousel, .carousel-inner {
+    height: 100%;
+}
+.carousel-caption {
+    top: 50%; 
+    bottom: auto;
+    -webkit-transform: translate(0, -50%); 
+    -ms-transform: translate(0, -50%); 
+    transform: translate(0, -50%);
+}
+.sr-only .carousel-control-prev-icon {
+    background-color: black;
+    color: black;
+}
+h1, p{
+    color: black;
+    text-align: center;
+}
+#go, #cv {
+    margin-top: 30px;
+}
+#name2 {
+    font-weight: bolder;
+    font-size: 50px;
+}
+#slide1, #slide2 {
+    height: 720px;
+}
+
+
+/* Small devices (landscape phones, 460px and up) */
+@media (min-width: 460px) {
+    #about {
+        height: auto;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .d-block, #slide1, #slide2 {
+        height: 735px;
+        width: 100%;
+    }
+    #about {
+        height: auto;
+        padding: 0 45px 0 45px;
+    }
+    .text-muted{
+        padding: 15px;
+    }
+    #portBtn {
+        margin-top: -25px;
+    }
+}
+
+/* Large devices (desktops, 920px and up) */
+@media (min-width: 920px) { 
+    .d-block, #slide1, #slide2 {
+        height: 715px;
+        width: 100%;
+    }
+    #aboutText {
+        height: 415px;
+        margin-top: -15px;
+    }
+    #about {
+        height: 100vh;
+        padding: 0 45px 0 45px;
+    }
+    .btn {
+        margin-top: -15px;
+    }
+    .page-header {
+        margin-top: -40px;
+    }
+}
