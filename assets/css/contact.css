@@ -22,7 +22,7 @@
     color: black;
     font-weight: bold;
 }
-#name,
+#name3,
 #email, 
 #message {
     width: 80%;
@@ -44,4 +44,16 @@ input {
 }
 #col2 {
     margin-top: -40px;
+}
+
+@media (min-width: 374px) {
+#name3,
+#email, 
+#message {
+    width: 90%;
+    font-weight: bold;
+}
+#form {
+    padding: 0;
+}
 }
