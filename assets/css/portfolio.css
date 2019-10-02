@@ -98,9 +98,13 @@
     width: 336px;
     padding: 0%;
 }
+#portcard::before {
+    content: "<>";
+    color: black;
+}
 
-/* Small devices (landscape phones, 460px and up) */
-@media (min-width: 460px) {
+/* Small devices (landscape phones, 374px and up) */
+@media (min-width: 374px) {
     #portfolio {
         height: auto;
     }
